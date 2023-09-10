@@ -1,0 +1,11 @@
+rootProject.name = 'multi-module-gradle-projects'
+
+include 'app'
+include 'api'
+include 'domain'
+include 'common'
+
+include 'client'
+include 'client:client-a'
+findProject(':client:client-a')?.name = 'client-a'
+
