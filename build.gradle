@@ -53,7 +53,7 @@ project(":api") {
     dependencies {
         implementation project(":domain")
         implementation project(":client")
-//        compileOnly project(":client:cleint-a")
+        implementation project(":client:client-a")
     }
 }
 
