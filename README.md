@@ -2,11 +2,15 @@
 
 ## 모듈 설명
 
-app: SpringApplication 실행 파일 위치
-api: controller 파일 위치
-domain: service, entity, repository 위치
-common: MSA간 사용되는 공통 코드, DTO 위치
-client: FeignClient, RabbitMQ 위치
+- app: SpringApplication 실행 파일 위치
+
+- api: controller 파일 위치
+
+- domain: service, entity, repository 위치
+
+- common: MSA간 사용되는 공통 코드, DTO 위치
+
+- client: FeignClient, RabbitMQ 위치
 
 ## 프로젝트 구조도
 
@@ -34,7 +38,9 @@ app -> api -> domain -> common -> client
 
 ## 문제 상황
 
-단순한 1뎁스 모듈 구조가 아닌, 2뎁스 이상의 구조여서 그런지는 불분명하다 이상 증상이 생긴다
+단순한 1뎁스 모듈 구조가 아닌, 2뎁스 이상의 구조여서 그런지는 불분명하다. 
+
+확실한 증상은 현재 구조에서 아래 이상 증상들이 발견된다..
 
 - java.lang.NoClassDefFoundError 에러
   - 분명히 하위 모듈의 java파일을 정상 import 했음에도 불구하고, 실행시에 이와 같은 에러 발생
